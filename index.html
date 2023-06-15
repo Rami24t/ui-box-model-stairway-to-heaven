@@ -17,7 +17,12 @@
       text-align: center;
       font-family: "Kavoon", sans-serif;
       color: darkblue;
-      font-size: 1rem;
+      font-size: max(1.3vw,1rem);
+    }
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .pinkBorder {
       border: 1vw solid palevioletred;
@@ -85,13 +90,13 @@
     }
     @keyframes color {
       0% {
-        background: #33cccc;
+        background: lime;
       }
       50% {
-        background: #d1ffd2;
+        background: orangered;
       }
       100% {
-        background: #33cccc;
+        background: lime;
       }
     }
     #container {
@@ -99,7 +104,6 @@
       margin: auto;
     }
     body {
-      background: #33cccc; /* Fallback */
       animation: color 6s infinite linear;
     }
   </style>
@@ -107,16 +111,16 @@
   <body>
     <div id="container">
       <div class="pinkBorder">
-        <div class="box1">RAMI</div>
-        <div class="box2 type2">RAMI</div>
-        <div class="box3">RAMI</div>
-        <div class="box4 type2">RAMI</div>
+        <div class="box1 center">RAMI</div>
+        <div class="box2 type2 center">RAMI</div>
+        <div class="box3 center">RAMI</div>
+        <div class="box4 type2 center">RAMI</div>
       </div>
       <div>
-        <div class="box5 type3">RAMI</div>
-        <div class="box6"><div class="box7 type3">RAMI</div></div>
-        <div class="box8"><div class="box9 type3">RAMI</div></div>
-        <div class="box10"><div class="box11 type3">RAMI</div></div>
+        <div class="box5 type3 center">RAMI</div>
+        <div class="box6"><div class="box7 type3 center">RAMI</div></div>
+        <div class="box8"><div class="box9 type3 center">RAMI</div></div>
+        <div class="box10"><div class="box11 type3 center">RAMI</div></div>
       </div>
     </div>
   </body>
